@@ -22,21 +22,5 @@
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
     <script type="module" src="/src/main.tsx"></script>
-    <script>
-      async function fetchReport() {
-        try {
-          const response = await fetch('/get-report?company=infosys');
-          if (!response.ok) {
-            throw new Error('Failed to fetch report');
-          }
-          const data = await response.json();
-          // ... use data
-        } catch (error) {
-          alert('Failed to fetch report. Please try again later.');
-        }
-      }
-      
-      fetchReport();
-    </script>
   </body>
 </html>
